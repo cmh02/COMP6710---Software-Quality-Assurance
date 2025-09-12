@@ -107,37 +107,48 @@ Google Gemini's implementation of the Mann-Whitney U test. It also provides a te
 by Dr. Rahman on his github. 
 
 For the tests to function properly, the provided datafile ('perf-data.csv') must be in the same directory as this file.
+Upon execution, the datafile will be loaded once and the needed columns (A and B) will be extracted into numpy arrays for
+the test cases.
 '''
 class TestGenAI(unittest.TestCase):
 
-	# Test Setup
-	def setUp(self):
+	# Pre-Test Setup
+	@classmethod
+	def setUpClass(cls):
 
-		# Load the data into pandas dataframe
-		self.df = pd.read_csv('perf-data.csv', usecols=['A', 'B'])
-		self.A = self.df['A'].to_numpy()
-		self.B = self.df['B'].to_numpy()
+		# Load the data into pandas dataframe and numpy arrays
+		cls.df = pd.read_csv('perf-data.csv', usecols=['A', 'B'])
+		cls.A = cls.df['A'].to_numpy()
+		cls.B = cls.df['B'].to_numpy()
 
-		# Print data and metrics for verification
+		# Print data and metrics for information/verification
+		print(f"")
 		print(f"-------------------- UNIT TEST SETUP ---------------------------------")
-		print(f"Loaded {len(self.df)} rows from perf-data.csv!")
-		print(f"-> Dataset A: {self.A[:5]} ... {self.A[-5:]}")
-		print(f"-> Dataset B: {self.B[:5]} ... {self.B[-5:]}")
+		print(f"Loaded {len(cls.df)} rows from perf-data.csv!")
+		print(f"-> Dataset A: {cls.A[:5]} ... {cls.A[-5:]}")
+		print(f"-> Dataset B: {cls.B[:5]} ... {cls.B[-5:]}")
 		print()
 		print(f"Dataset Metrics:")
-		print(f"-> Length A: {len(self.A)}, Length B: {len(self.B)}")
-		print(f"-> Mean A: {np.mean(self.A)}, Mean B: {np.mean(self.B)}")
-		print(f"-> Median A: {np.median(self.A)}, Median B: {np.median(self.B)}")
-		print(f"-> StdDev A: {np.std(self.A)}, StdDev B: {np.std(self.B)}")
+		print(f"-> Length A: {len(cls.A)}, Length B: {len(cls.B)}")
+		print(f"-> Mean A: {np.mean(cls.A)}, Mean B: {np.mean(cls.B)}")
+		print(f"-> Median A: {np.median(cls.A)}, Median B: {np.median(cls.B)}")
+		print(f"-> StdDev A: {np.std(cls.A)}, StdDev B: {np.std(cls.B)}")
 		print(f"----------------------------------------------------------------------")
+		print(f"")
 
 	# Test Case 1: Class Example
 	def test_ClassExample(self):
+		print(f"Executing Test Case 1")
+		print(f"---------------------")
 		self.assertEqual('Not-Significant', getComparisonFromDrRahman(self.A, self.B))
+		print(f"")
 
 	# Test Case 2: Gemini Example
 	def test_GeminiExample(self):
+		print(f"Executing Test Case 2")
+		print(f"---------------------")
 		self.assertEqual('Not-Significant', getComparisonFromGemini(self.A, self.B))
+		print(f"")
 
 '''
 PROGRAM EXECUTION
