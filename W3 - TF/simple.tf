@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     docker = {
-      source = "kreuzwerker/docker"
+      source  = "kreuzwerker/docker"
       version = "~> 3.0.1"
     }
   }
 }
 
 provider "docker" {
-   host ="/Users/akondrahman/.docker/run/docker.sock"
+  host = "/Users/akondrahman/.docker/run/docker.sock"
 }
 
 
