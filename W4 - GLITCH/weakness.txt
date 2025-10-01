@@ -1,0 +1,12 @@
+|                    Admin by default | 225
+|                      Empty password | 190
+|   Full permission to the filesystem | 10
+|                 Hard-coded password | 704
+|                   Hard-coded secret | 2753
+|                     Hard-coded user | 1333
+|          Invalid IP address binding | 83
+|                  No integrity check | 2
+|                  Unguarded variable | 0
+|             Use of HTTP without TLS | 185
+| Use of obsolete command or function | 105
+|               Weak Crypto Algorithm | 40
