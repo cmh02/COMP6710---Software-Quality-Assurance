@@ -1,0 +1,41 @@
+Items from Other Papers: 
+
+1. DataGen paper (ICLR 2025)
+   1.a. diverse, accurate, and highly controllable datasets 
+   1.b. attribute-guided generation module, gorup checking feature 
+   1.c. RAG-based technique for factual verification 
+   1.d. Challenges: (i) Generalization and Controllability, (ii) Diversity and Truthfulness 
+   1.e. Diversity: diversity is obtained through  wide range of techniques: hyperparameter tuning, attributed-guided generation, group checking 
+   1.f. Section 2 first paragraph  
+   1.g. Self reflection and self enahncement for quality assesment and enhancement 
+   1.h. Truthfulness validation by RAG 
+   1.i. Group checking with similarity matrix 
+   1.j. self-BLUE score for diversity 
+   1.k. calculating entity overlap rate for knowledge richness 
+
+2. FORGE paper (ICSE 2026)
+   2.a. Challenges: manual process of dataset construction and absence of standardized classification 
+   2.b. map-reduce paradigm 
+   2.c. tree of thoughts 
+   2.d. challenges of using audit reports: complexity of audit reports, complexity of CWE hierarchy, limitations of LLMs 
+   2.e. Section 3.2: token length limitations of LLMs , chunking a text segment 
+   2.f. Section 3.3: map reduce extractor 
+   2.g. tree of though reasoning 
+   2.h. fallback strategy 
+
+3. COLM 2024 Paper 
+   3.a. actor-critic approach to improve pre-trained language models 
+   3.b. Perez et al. 2023 use LMs to generate datasets for evaluating the behavior of other LMs 
+   3.c. Section 4 - challenges and limitations of synthetic data: synthetic data might cause amibuity in AI alignment and training with synthetic data maes evaluation decontamination harder 
+   3.d. generative adversarial neyworks or diffusion models can control and manipulate specific attributes of the generated data 
+
+4. Synthetic Data Generation (Romania Paper)
+   4.a. Section 4.1 definition of synthetic data 
+   4.b. Few shot prompting often yields higher quality task specific output 
+   4.c. zero shot topic generation 
+   4.d. iterative and feedback driven generation 
+   4.e. critic or classifier to judge the quality of synthetic samples 
+   4.f. RAG-base data augmentation to enhance faithfulness 
+   4.i. implement execution feedback by filtering correct solutions and learning from failures 
+   4.k. Distinct-n, self-BLEU, perplexity, and distributional simialrity to real data
+   4.l. page-18: Synthetic multimodel data can be used to pretrain and fine tune models for cross-modal retrieval, captioning, audio transcription, and other tasks where real data is carce or expensive to annotate. 

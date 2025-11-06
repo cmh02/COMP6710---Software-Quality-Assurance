@@ -1,0 +1,5 @@
+# COMP5710 - Crash Error 4
+# Description: I passed a XLSX (Excel Workbook) as the file.
+
+root@98cb4ebe51ce:/WORKSHOP/blackbox# dist/FileOpener crashtest_excelworkbook.xlsx
+An error occurred while reading the file: 'utf-8' codec can't decode bytes in position 15-16: invalid continuation byte

@@ -1,0 +1,5 @@
+# COMP5710 - Crash Error 1
+# Description: I passed a directory (the dist folder) and it resulted in error.
+
+root@98cb4ebe51ce:/WORKSHOP/blackbox# dist/FileOpener dist      
+An error occurred while reading the file: [Errno 21] Is a directory: 'dist'

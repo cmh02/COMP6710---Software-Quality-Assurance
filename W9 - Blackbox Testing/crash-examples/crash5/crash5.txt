@@ -1,0 +1,6 @@
+# COMP5710 - Crash Error 5
+# Description: I just found another random file on the docker image directory.
+#			   Specifically, I used bin/chmod.
+
+root@98cb4ebe51ce:/WORKSHOP/blackbox# dist/FileOpener ../../bin/chmod  
+An error occurred while reading the file: 'utf-8' codec can't decode byte 0xb7 in position 18: invalid start byte

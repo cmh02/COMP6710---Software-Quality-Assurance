@@ -1,0 +1,5 @@
+# COMP5710 - Crash Error 2
+# Description: I passed a HEIC image as the file.
+
+root@98cb4ebe51ce:/WORKSHOP/blackbox# dist/FileOpener crashtest_heic.heic
+An error occurred while reading the file: 'utf-8' codec can't decode byte 0xe0 in position 39: invalid continuation byte
