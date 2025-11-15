@@ -44,5 +44,5 @@ Execute the following commands on the terminal:
 - Repeat the steps shown in class for `w11.c`
 - Save and submit the screenshot of your AFL++ execution screen
 - Save and submit the output folder generated as part of the exercise
-- Report the number of crashes and hangs by the tool for the program  in a text file
+- Report the number of *saved* crashes and hangs by the tool for the program  in a text file
 - Due: Nov 14, 2025, 11:59 PM CST
