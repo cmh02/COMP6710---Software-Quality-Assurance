@@ -1,0 +1,7 @@
+Author: Chris Hinkson cmh0201@auburn.edu
+COMP 5710 - Software Quality Assurance
+Assignment 11 - Greybox Fuzzing with AFL++
+
+From using AFL++ on w11, I got the following:
+-> saved crashes: 0
+-> saved hangs: 0
