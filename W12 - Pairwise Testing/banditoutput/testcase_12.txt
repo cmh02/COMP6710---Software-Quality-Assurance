@@ -1,0 +1,86 @@
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.13.5
+Run started:2025-11-21 03:44:48.079320
+
+Test results:
+>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b614_pytorch_load.html
+   Location: detr-main/d2/converter.py:36:21
+35	    else:
+36	        checkpoint = torch.load(args.source_model, map_location="cpu")
+37	    model_to_convert = checkpoint["model"]
+
+--------------------------------------------------
+>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b614_pytorch_load.html
+   Location: detr-main/d2/detr/detr.py:121:25
+120	                print("LOAD pre-trained weights")
+121	                weight = torch.load(frozen_weights, map_location=lambda storage, loc: storage)['model']
+122	                new_weight = {}
+
+--------------------------------------------------
+>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b614_pytorch_load.html
+   Location: detr-main/main.py:168:21
+167	    if args.frozen_weights is not None:
+168	        checkpoint = torch.load(args.frozen_weights, map_location='cpu')
+169	        model_without_ddp.detr.load_state_dict(checkpoint['model'])
+
+--------------------------------------------------
+>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b614_pytorch_load.html
+   Location: detr-main/main.py:177:25
+176	        else:
+177	            checkpoint = torch.load(args.resume, map_location='cpu')
+178	        model_without_ddp.load_state_dict(checkpoint['model'])
+
+--------------------------------------------------
+>> Issue: [B301:blacklist] Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/blacklists/blacklist_calls.html#b301-pickle
+   Location: detr-main/util/misc.py:127:25
+126	        buffer = tensor.cpu().numpy().tobytes()[:size]
+127	        data_list.append(pickle.loads(buffer))
+128	
+
+--------------------------------------------------
+>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
+   Severity: Medium   Confidence: High
+   CWE: CWE-502 (https://cwe.mitre.org/data/definitions/502.html)
+   More Info: https://bandit.readthedocs.io/en/1.8.6/plugins/b614_pytorch_load.html
+   Location: detr-main/util/plot_utils.py:86:15
+85	    for f, color, name in zip(files, sns.color_palette("Blues", n_colors=len(files)), names):
+86	        data = torch.load(f)
+87	        # precision is n_iou, n_points, n_cat, n_area, max_det
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 3395
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 43
+		Medium: 6
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 49
+Files skipped (0):

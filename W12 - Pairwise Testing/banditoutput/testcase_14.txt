@@ -1,0 +1,7 @@
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.13.5
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="bandit" tests="0" />

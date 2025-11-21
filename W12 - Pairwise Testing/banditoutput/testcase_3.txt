@@ -1,0 +1,11 @@
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.13.5
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/d2/converter.py:36: B614[bandit]: MEDIUM: Use of unsafe PyTorch load
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/d2/detr/detr.py:121: B614[bandit]: MEDIUM: Use of unsafe PyTorch load
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/main.py:168: B614[bandit]: MEDIUM: Use of unsafe PyTorch load
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/main.py:177: B614[bandit]: MEDIUM: Use of unsafe PyTorch load
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/util/misc.py:127: B301[bandit]: MEDIUM: Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.
+/Users/chrishinkson/Programming/COMP6710 - Software Quality Assurance/W12 - Pairwise Testing/detr-main/util/plot_utils.py:86: B614[bandit]: MEDIUM: Use of unsafe PyTorch load
