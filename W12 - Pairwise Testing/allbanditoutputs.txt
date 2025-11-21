@@ -1,6 +1,9 @@
 
 ========================================
 OUTPUT FOR TEST CASE 1
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'all', '--confidence-level', 'all', '-f', 'csv']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -63,6 +66,9 @@ detr-main/util/plot_utils.py,pytorch_load,B614,MEDIUM,HIGH,https://cwe.mitre.org
 
 ========================================
 OUTPUT FOR TEST CASE 2
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'low', '--confidence-level', 'low', '-f', 'csv']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -125,6 +131,9 @@ detr-main/util/plot_utils.py,pytorch_load,B614,MEDIUM,HIGH,https://cwe.mitre.org
 
 ========================================
 OUTPUT FOR TEST CASE 3
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'medium', '--confidence-level', 'medium', '-f', 'custom']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -143,6 +152,9 @@ OUTPUT FOR TEST CASE 3
 
 ========================================
 OUTPUT FOR TEST CASE 4
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'high', '--confidence-level', 'high', '-f', 'custom']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -155,6 +167,9 @@ OUTPUT FOR TEST CASE 4
 
 ========================================
 OUTPUT FOR TEST CASE 5
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'low', '-f', 'html']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -402,6 +417,9 @@ pre {
 
 ========================================
 OUTPUT FOR TEST CASE 6
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'high', '--confidence-level', 'all', '-f', 'html']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -511,6 +529,9 @@ pre {
 
 ========================================
 OUTPUT FOR TEST CASE 7
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'all', '--confidence-level', 'high', '-f', 'json']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -519,7 +540,7 @@ OUTPUT FOR TEST CASE 7
 [main]	INFO	cli exclude tests: None
 {
   "errors": [],
-  "generated_at": "2025-11-21T03:44:46Z",
+  "generated_at": "2025-11-21T03:49:08Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 49,
@@ -1887,6 +1908,9 @@ OUTPUT FOR TEST CASE 7
 
 ========================================
 OUTPUT FOR TEST CASE 8
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'medium', '-f', 'json']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -1895,7 +1919,7 @@ OUTPUT FOR TEST CASE 8
 [main]	INFO	cli exclude tests: None
 {
   "errors": [],
-  "generated_at": "2025-11-21T03:44:46Z",
+  "generated_at": "2025-11-21T03:49:08Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 49,
@@ -3263,6 +3287,9 @@ OUTPUT FOR TEST CASE 8
 
 ========================================
 OUTPUT FOR TEST CASE 9
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'high', '-f', 'screen']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -3270,7 +3297,7 @@ OUTPUT FOR TEST CASE 9
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-[95mRun started:2025-11-21 03:44:47.049801[0m
+[95mRun started:2025-11-21 03:49:09.194111[0m
 [95m
 Test results:[0m
 [93m>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -3786,6 +3813,9 @@ Run metrics:[0m
 
 ========================================
 OUTPUT FOR TEST CASE 10
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'all', '--confidence-level', 'medium', '-f', 'screen']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -3793,7 +3823,7 @@ OUTPUT FOR TEST CASE 10
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-[95mRun started:2025-11-21 03:44:47.387462[0m
+[95mRun started:2025-11-21 03:49:09.536210[0m
 [95m
 Test results:[0m
 [93m>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -4309,6 +4339,9 @@ Run metrics:[0m
 
 ========================================
 OUTPUT FOR TEST CASE 11
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'high', '--confidence-level', 'low', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -4316,7 +4349,7 @@ OUTPUT FOR TEST CASE 11
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:47.724421
+Run started:2025-11-21 03:49:09.874237
 
 Test results:
 	No issues identified.
@@ -4343,6 +4376,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 12
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'all', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -4350,7 +4386,7 @@ OUTPUT FOR TEST CASE 12
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:48.079320
+Run started:2025-11-21 03:49:10.208886
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -4436,6 +4472,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 13
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'high', '-f', 'xml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -4467,6 +4506,9 @@ Location detr-main/util/plot_utils.py:86</error></testcase></testsuite>
 
 ========================================
 OUTPUT FOR TEST CASE 14
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'high', '--confidence-level', 'medium', '-f', 'xml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -4480,6 +4522,9 @@ OUTPUT FOR TEST CASE 14
 
 ========================================
 OUTPUT FOR TEST CASE 15
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'vuln', '--severity-level', 'all', '--confidence-level', 'low', '-f', 'yaml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -4488,7 +4533,7 @@ OUTPUT FOR TEST CASE 15
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
 errors: []
-generated_at: '2025-11-21T03:44:49Z'
+generated_at: '2025-11-21T03:49:11Z'
 metrics:
   _totals:
     CONFIDENCE.HIGH: 49
@@ -5724,6 +5769,9 @@ results:
 
 ========================================
 OUTPUT FOR TEST CASE 16
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'all', '-f', 'yaml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -5732,7 +5780,7 @@ OUTPUT FOR TEST CASE 16
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
 errors: []
-generated_at: '2025-11-21T03:44:49Z'
+generated_at: '2025-11-21T03:49:11Z'
 metrics:
   _totals:
     CONFIDENCE.HIGH: 49
@@ -6968,6 +7016,9 @@ results:
 
 ========================================
 OUTPUT FOR TEST CASE 17
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'all', '-f', 'xml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -7128,6 +7179,9 @@ Location detr-main/util/plot_utils.py:86</error></testcase></testsuite>
 
 ========================================
 OUTPUT FOR TEST CASE 18
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'all', '--confidence-level', 'low', '-f', 'xml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -7288,6 +7342,9 @@ Location detr-main/util/plot_utils.py:86</error></testcase></testsuite>
 
 ========================================
 OUTPUT FOR TEST CASE 19
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'high', '--confidence-level', 'medium', '-f', 'yaml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -7296,7 +7353,7 @@ OUTPUT FOR TEST CASE 19
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
 errors: []
-generated_at: '2025-11-21T03:44:50Z'
+generated_at: '2025-11-21T03:49:12Z'
 metrics:
   _totals:
     CONFIDENCE.HIGH: 49
@@ -7652,6 +7709,9 @@ results: []
 
 ========================================
 OUTPUT FOR TEST CASE 20
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'high', '-f', 'yaml']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -7660,7 +7720,7 @@ OUTPUT FOR TEST CASE 20
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
 errors: []
-generated_at: '2025-11-21T03:44:50Z'
+generated_at: '2025-11-21T03:49:13Z'
 metrics:
   _totals:
     CONFIDENCE.HIGH: 49
@@ -8120,6 +8180,9 @@ results:
 
 ========================================
 OUTPUT FOR TEST CASE 21
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'high', '-f', 'csv']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8139,6 +8202,9 @@ detr-main/util/plot_utils.py,pytorch_load,B614,MEDIUM,HIGH,https://cwe.mitre.org
 
 ========================================
 OUTPUT FOR TEST CASE 22
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'high', '--confidence-level', 'medium', '-f', 'csv']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8152,6 +8218,9 @@ filename,test_name,test_id,issue_severity,issue_confidence,issue_cwe,issue_text,
 
 ========================================
 OUTPUT FOR TEST CASE 23
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'all', '--confidence-level', 'low', '-f', 'custom']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8213,6 +8282,9 @@ OUTPUT FOR TEST CASE 23
 
 ========================================
 OUTPUT FOR TEST CASE 24
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'all', '-f', 'custom']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8274,6 +8346,9 @@ OUTPUT FOR TEST CASE 24
 
 ========================================
 OUTPUT FOR TEST CASE 25
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'all', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8281,7 +8356,7 @@ OUTPUT FOR TEST CASE 25
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:52.650234
+Run started:2025-11-21 03:49:14.871814
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -8798,6 +8873,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 26
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'all', '--confidence-level', 'all', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -8805,7 +8883,7 @@ OUTPUT FOR TEST CASE 26
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:53.009275
+Run started:2025-11-21 03:49:15.243661
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -9322,6 +9400,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 27
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'high', '--confidence-level', 'all', '-f', 'screen']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -9329,7 +9410,7 @@ OUTPUT FOR TEST CASE 27
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-[95mRun started:2025-11-21 03:44:53.355521[0m
+[95mRun started:2025-11-21 03:49:15.608429[0m
 [95m
 Test results:[0m
 	No issues identified.
@@ -9355,6 +9436,9 @@ Run metrics:[0m
 
 ========================================
 OUTPUT FOR TEST CASE 28
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'low', '-f', 'screen']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -9362,7 +9446,7 @@ OUTPUT FOR TEST CASE 28
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-[95mRun started:2025-11-21 03:44:53.697633[0m
+[95mRun started:2025-11-21 03:49:15.953336[0m
 [95m
 Test results:[0m
 [93m>> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -9447,6 +9531,9 @@ Run metrics:[0m
 
 ========================================
 OUTPUT FOR TEST CASE 29
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'medium', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -9454,7 +9541,7 @@ OUTPUT FOR TEST CASE 29
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:54.041517
+Run started:2025-11-21 03:49:16.318099
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -9540,6 +9627,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 30
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'high', '-f', 'txt']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -9547,7 +9637,7 @@ OUTPUT FOR TEST CASE 30
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:54.387476
+Run started:2025-11-21 03:49:16.672083
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
@@ -9633,6 +9723,9 @@ Files skipped (0):
 
 ========================================
 OUTPUT FOR TEST CASE 31
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'all', '-f', 'json']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -9641,7 +9734,7 @@ OUTPUT FOR TEST CASE 31
 [main]	INFO	cli exclude tests: None
 {
   "errors": [],
-  "generated_at": "2025-11-21T03:44:54Z",
+  "generated_at": "2025-11-21T03:49:17Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 49,
@@ -10148,6 +10241,9 @@ OUTPUT FOR TEST CASE 31
 
 ========================================
 OUTPUT FOR TEST CASE 32
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'high', '--confidence-level', 'high', '-f', 'json']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -10156,7 +10252,7 @@ OUTPUT FOR TEST CASE 32
 [main]	INFO	cli exclude tests: None
 {
   "errors": [],
-  "generated_at": "2025-11-21T03:44:55Z",
+  "generated_at": "2025-11-21T03:49:17Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 49,
@@ -10542,6 +10638,9 @@ OUTPUT FOR TEST CASE 32
 
 ========================================
 OUTPUT FOR TEST CASE 33
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'all', '--confidence-level', 'high', '-f', 'html']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -11779,6 +11878,9 @@ pre {
 
 ========================================
 OUTPUT FOR TEST CASE 34
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'low', '--confidence-level', 'medium', '-f', 'html']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -13016,6 +13118,9 @@ pre {
 
 ========================================
 OUTPUT FOR TEST CASE 35
+
+Bandit Command: ['bandit', '-r', 'detr-main', '-a', 'file', '--severity-level', 'medium', '--confidence-level', 'low', '-f', 'json']
+
 ========================================
 
 [main]	INFO	profile include tests: None
@@ -13024,7 +13129,7 @@ OUTPUT FOR TEST CASE 35
 [main]	INFO	cli exclude tests: None
 {
   "errors": [],
-  "generated_at": "2025-11-21T03:44:56Z",
+  "generated_at": "2025-11-21T03:49:18Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 49,

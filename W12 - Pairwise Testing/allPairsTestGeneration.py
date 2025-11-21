@@ -26,13 +26,14 @@ if __name__ == "__main__":
 
 	# Save all generated tests to a file
 	with open("allPairsTestCases.txt", "w") as testFile:
-		for i, pairs in tqdm.tqdm(iterable=enumerate(pairTests), total=len(pairTests), desc="Writing Test Cases to File", unit="test cases"):
-			testFile.write(f"{i + 1}: {pairs}\n")
+		for i, test in tqdm.tqdm(iterable=enumerate(pairTests), total=len(pairTests), desc="Writing Test Cases to File", unit="test cases"):
+			testFile.write(f"{i + 1}: {test}\n")
 
 	# Make sure bandit output directory exists
 	os.makedirs("banditoutput", exist_ok=True)
 
 	# Run bandit with each generated test case
+	banditCommands = []
 	for i, test in tqdm.tqdm(iterable=enumerate(pairTests), total=len(pairTests), desc="Running Bandit Tests", unit="test cases"):
 
 		# Make sure parameters are set and valid
@@ -56,6 +57,7 @@ if __name__ == "__main__":
 			"--confidence-level", test[2],
 			"-f", test[3]
 		]
+		banditCommands.append(command)
 		
 		# Actually run bandit and save output to file
 		with open(os.path.join("banditoutput", f"testcase_{i+1}.txt"), "w") as outputFile:
@@ -63,10 +65,11 @@ if __name__ == "__main__":
 
 	# Go through and concat all the test case outputs into a single file for canvas deliverable
 	with open("allbanditoutputs.txt", "w") as allOutputsFile:
-		for i in tqdm.tqdm(iterable=range(len(pairTests)), total=len(pairTests), desc="Concatenating Bandit Outputs", unit="test cases"):
+		for i, test in tqdm.tqdm(iterable=enumerate(pairTests), total=len(pairTests), desc="Concatenating Bandit Outputs", unit="test cases"):
 			with open(os.path.join("banditoutput", f"testcase_{i+1}.txt"), "r") as individualOutputFile:
 				allOutputsFile.write("\n========================================\n")
-				allOutputsFile.write(f"OUTPUT FOR TEST CASE {i+1}\n")
+				allOutputsFile.write(f"OUTPUT FOR TEST CASE {i+1}\n\n")
+				allOutputsFile.write(f"Bandit Command: {banditCommands[i]}\n\n")
 				allOutputsFile.write("========================================\n\n")
 				allOutputsFile.write(individualOutputFile.read())
 				allOutputsFile.write("\n\n")

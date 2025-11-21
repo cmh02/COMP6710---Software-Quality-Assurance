@@ -3,7 +3,7 @@
 [main]	INFO	cli include tests: None
 [main]	INFO	cli exclude tests: None
 [main]	INFO	running on Python 3.13.5
-Run started:2025-11-21 03:44:53.009275
+Run started:2025-11-21 03:49:15.243661
 
 Test results:
 >> Issue: [B614:pytorch_load] Use of unsafe PyTorch load
