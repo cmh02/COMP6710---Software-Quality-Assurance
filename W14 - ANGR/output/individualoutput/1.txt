@@ -1,0 +1,164 @@
+
+
+===============================
+
+Analysis for Binary: W14 - ANGR/binaries/1
+Main Object: <ELF Object 1, maps [0x8048000:0x484f6043]>
+Number of Nodes: 74
+Number of Edges: 96
+
+
+Control Flow Graph (DiGraph with 74 nodes and 96 edges):
+	Node: <CFGNode _start [33]> [Name: _start | Size: 33 | Memory Range: 134513584 - 134513617]
+		Successor: <CFGNode 0x8048380[6]> [Name: None | Size: 6 | Memory Range: 134513536 - 134513542
+	Node: <CFGNode _init [9]> [Name: _init | Size: 9 | Memory Range: 134513452 - 134513461]
+		Successor: <CFGNode __x86.get_pc_thunk.bx [4]> [Name: __x86.get_pc_thunk.bx | Size: 4 | Memory Range: 134513632 - 134513636
+	Node: <CFGNode __x86.get_pc_thunk.bx [4]> [Name: __x86.get_pc_thunk.bx | Size: 4 | Memory Range: 134513632 - 134513636]
+		Successor: <CFGNode _init+0x9 [16]> [Name: _init+0x9 | Size: 16 | Memory Range: 134513461 - 134513477
+		Successor: <CFGNode _fini+0x9 [11]> [Name: _fini+0x9 | Size: 11 | Memory Range: 134514141 - 134514152
+		Successor: <CFGNode __libc_csu_init+0x9 [24]> [Name: __libc_csu_init+0x9 | Size: 24 | Memory Range: 134514041 - 134514065
+	Node: <CFGNode deregister_tm_clones [15]> [Name: deregister_tm_clones | Size: 15 | Memory Range: 134513648 - 134513663]
+		Successor: <CFGNode deregister_tm_clones+0x29 [2]> [Name: deregister_tm_clones+0x29 | Size: 2 | Memory Range: 134513689 - 134513691
+		Successor: <CFGNode deregister_tm_clones+0xf [9]> [Name: deregister_tm_clones+0xf | Size: 9 | Memory Range: 134513663 - 134513672
+	Node: <CFGNode register_tm_clones [24]> [Name: register_tm_clones | Size: 24 | Memory Range: 134513696 - 134513720]
+		Successor: <CFGNode register_tm_clones+0x33 [2]> [Name: register_tm_clones+0x33 | Size: 2 | Memory Range: 134513747 - 134513749
+		Successor: <CFGNode register_tm_clones+0x18 [9]> [Name: register_tm_clones+0x18 | Size: 9 | Memory Range: 134513720 - 134513729
+	Node: <CFGNode __do_global_dtors_aux [9]> [Name: __do_global_dtors_aux | Size: 9 | Memory Range: 134513760 - 134513769]
+		Successor: <CFGNode __do_global_dtors_aux+0x9 [11]> [Name: __do_global_dtors_aux+0x9 | Size: 11 | Memory Range: 134513769 - 134513780
+		Successor: <CFGNode __do_global_dtors_aux+0x1c [2]> [Name: __do_global_dtors_aux+0x1c | Size: 2 | Memory Range: 134513788 - 134513790
+	Node: <CFGNode frame_dummy [11]> [Name: frame_dummy | Size: 11 | Memory Range: 134513792 - 134513803]
+		Successor: <CFGNode frame_dummy+0xb [2]> [Name: frame_dummy+0xb | Size: 2 | Memory Range: 134513803 - 134513805
+		Successor: <CFGNode frame_dummy+0x10 [9]> [Name: frame_dummy+0x10 | Size: 9 | Memory Range: 134513808 - 134513817
+	Node: <CFGNode print_msg [24]> [Name: print_msg | Size: 24 | Memory Range: 134513835 - 134513859]
+		Successor: <CFGNode 0x8048360[6]> [Name: None | Size: 6 | Memory Range: 134513504 - 134513510
+	Node: <CFGNode main [38]> [Name: main | Size: 38 | Memory Range: 134513865 - 134513903]
+		Successor: <CFGNode 0x8048360[6]> [Name: None | Size: 6 | Memory Range: 134513504 - 134513510
+	Node: <CFGNode __libc_csu_init [9]> [Name: __libc_csu_init | Size: 9 | Memory Range: 134514032 - 134514041]
+		Successor: <CFGNode __x86.get_pc_thunk.bx [4]> [Name: __x86.get_pc_thunk.bx | Size: 4 | Memory Range: 134513632 - 134513636
+	Node: <CFGNode __libc_csu_fini [2]> [Name: __libc_csu_fini | Size: 2 | Memory Range: 134514128 - 134514130]
+	Node: <CFGNode _fini [9]> [Name: _fini | Size: 9 | Memory Range: 134514132 - 134514141]
+		Successor: <CFGNode __x86.get_pc_thunk.bx [4]> [Name: __x86.get_pc_thunk.bx | Size: 4 | Memory Range: 134513632 - 134513636
+	Node: <CFGNode 0x8048380[6]> [Name: None | Size: 6 | Memory Range: 134513536 - 134513542]
+		Successor: <CFGNode __libc_start_main [0]> [Name: __libc_start_main | Size: 0 | Memory Range: 1213202440 - 1213202440
+	Node: <CFGNode deregister_tm_clones+0x29 [2]> [Name: deregister_tm_clones+0x29 | Size: 2 | Memory Range: 134513689 - 134513691]
+		Successor: <CFGNode __do_global_dtors_aux+0x14 [10]> [Name: __do_global_dtors_aux+0x14 | Size: 10 | Memory Range: 134513780 - 134513790
+	Node: <CFGNode deregister_tm_clones+0xf [9]> [Name: deregister_tm_clones+0xf | Size: 9 | Memory Range: 134513663 - 134513672]
+		Successor: <CFGNode deregister_tm_clones+0x29 [2]> [Name: deregister_tm_clones+0x29 | Size: 2 | Memory Range: 134513689 - 134513691
+		Successor: <CFGNode deregister_tm_clones+0x18 [13]> [Name: deregister_tm_clones+0x18 | Size: 13 | Memory Range: 134513672 - 134513685
+	Node: <CFGNode register_tm_clones+0x33 [2]> [Name: register_tm_clones+0x33 | Size: 2 | Memory Range: 134513747 - 134513749]
+	Node: <CFGNode register_tm_clones+0x18 [9]> [Name: register_tm_clones+0x18 | Size: 9 | Memory Range: 134513720 - 134513729]
+		Successor: <CFGNode register_tm_clones+0x33 [2]> [Name: register_tm_clones+0x33 | Size: 2 | Memory Range: 134513747 - 134513749
+		Successor: <CFGNode register_tm_clones+0x21 [14]> [Name: register_tm_clones+0x21 | Size: 14 | Memory Range: 134513729 - 134513743
+	Node: <CFGNode __do_global_dtors_aux+0x9 [11]> [Name: __do_global_dtors_aux+0x9 | Size: 11 | Memory Range: 134513769 - 134513780]
+		Successor: <CFGNode deregister_tm_clones [15]> [Name: deregister_tm_clones | Size: 15 | Memory Range: 134513648 - 134513663
+	Node: <CFGNode __do_global_dtors_aux+0x1c [2]> [Name: __do_global_dtors_aux+0x1c | Size: 2 | Memory Range: 134513788 - 134513790]
+	Node: <CFGNode frame_dummy+0xb [2]> [Name: frame_dummy+0xb | Size: 2 | Memory Range: 134513803 - 134513805]
+		Successor: <CFGNode register_tm_clones [24]> [Name: register_tm_clones | Size: 24 | Memory Range: 134513696 - 134513720
+	Node: <CFGNode frame_dummy+0x10 [9]> [Name: frame_dummy+0x10 | Size: 9 | Memory Range: 134513808 - 134513817]
+		Successor: <CFGNode frame_dummy+0xb [2]> [Name: frame_dummy+0xb | Size: 2 | Memory Range: 134513803 - 134513805
+		Successor: <CFGNode frame_dummy+0x19 [9]> [Name: frame_dummy+0x19 | Size: 9 | Memory Range: 134513817 - 134513826
+	Node: <CFGNode 0x8048360[6]> [Name: None | Size: 6 | Memory Range: 134513504 - 134513510]
+		Successor: <CFGNode printf [0]> [Name: printf | Size: 0 | Memory Range: 1213202432 - 1213202432
+	Node: <CFGNode __libc_start_main [0]> [Name: __libc_start_main | Size: 0 | Memory Range: 1213202440 - 1213202440]
+		Successor: <CFGNode __libc_csu_init [9]> [Name: __libc_csu_init | Size: 9 | Memory Range: 134514032 - 134514041
+		Successor: <CFGNode main [38]> [Name: main | Size: 38 | Memory Range: 134513865 - 134513903
+		Successor: <CFGNode __libc_csu_fini [2]> [Name: __libc_csu_fini | Size: 2 | Memory Range: 134514128 - 134514130
+	Node: <CFGNode deregister_tm_clones+0x18 [13]> [Name: deregister_tm_clones+0x18 | Size: 13 | Memory Range: 134513672 - 134513685]
+		Successor: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184
+	Node: <CFGNode register_tm_clones+0x21 [14]> [Name: register_tm_clones+0x21 | Size: 14 | Memory Range: 134513729 - 134513743]
+		Successor: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184
+	Node: <CFGNode frame_dummy+0x19 [9]> [Name: frame_dummy+0x19 | Size: 9 | Memory Range: 134513817 - 134513826]
+		Successor: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184
+	Node: <CFGNode printf [0]> [Name: printf | Size: 0 | Memory Range: 1213202432 - 1213202432]
+		Successor: <CFGNode print_msg+0x18 [6]> [Name: print_msg+0x18 | Size: 6 | Memory Range: 134513859 - 134513865
+		Successor: <CFGNode main+0x26 [25]> [Name: main+0x26 | Size: 25 | Memory Range: 134513903 - 134513928
+	Node: <CFGNode __do_global_dtors_aux+0x14 [10]> [Name: __do_global_dtors_aux+0x14 | Size: 10 | Memory Range: 134513780 - 134513790]
+	Node: <CFGNode _fini+0x9 [11]> [Name: _fini+0x9 | Size: 11 | Memory Range: 134514141 - 134514152]
+	Node: <CFGNode __libc_csu_init+0x9 [24]> [Name: __libc_csu_init+0x9 | Size: 24 | Memory Range: 134514041 - 134514065]
+		Successor: <CFGNode _init [9]> [Name: _init | Size: 9 | Memory Range: 134513452 - 134513461
+	Node: <CFGNode _init+0x9 [16]> [Name: _init+0x9 | Size: 16 | Memory Range: 134513461 - 134513477]
+		Successor: <CFGNode _init+0x1e [5]> [Name: _init+0x1e | Size: 5 | Memory Range: 134513482 - 134513487
+		Successor: <CFGNode _init+0x19 [5]> [Name: _init+0x19 | Size: 5 | Memory Range: 134513477 - 134513482
+	Node: <CFGNode _init+0x1e [5]> [Name: _init+0x1e | Size: 5 | Memory Range: 134513482 - 134513487]
+		Successor: <CFGNode __libc_csu_init+0x21 [15]> [Name: __libc_csu_init+0x21 | Size: 15 | Memory Range: 134514065 - 134514080
+	Node: <CFGNode _init+0x19 [5]> [Name: _init+0x19 | Size: 5 | Memory Range: 134513477 - 134513482]
+		Successor: <CFGNode  [6]> [Name:  | Size: 6 | Memory Range: 134513568 - 134513574
+	Node: <CFGNode  [6]> [Name:  | Size: 6 | Memory Range: 134513568 - 134513574]
+		Successor: <CFGNode UnresolvableJumpTarget [0]> [Name: UnresolvableJumpTarget | Size: 0 | Memory Range: 1214255180 - 1214255180
+	Node: <CFGNode UnresolvableJumpTarget [0]> [Name: UnresolvableJumpTarget | Size: 0 | Memory Range: 1214255180 - 1214255180]
+	Node: <CFGNode __libc_csu_init+0x21 [15]> [Name: __libc_csu_init+0x21 | Size: 15 | Memory Range: 134514065 - 134514080]
+		Successor: <CFGNode __libc_csu_init+0x55 [8]> [Name: __libc_csu_init+0x55 | Size: 8 | Memory Range: 134514117 - 134514125
+		Successor: <CFGNode __libc_csu_init+0x30 [27]> [Name: __libc_csu_init+0x30 | Size: 27 | Memory Range: 134514080 - 134514107
+	Node: <CFGNode __libc_csu_init+0x55 [8]> [Name: __libc_csu_init+0x55 | Size: 8 | Memory Range: 134514117 - 134514125]
+	Node: <CFGNode __libc_csu_init+0x30 [27]> [Name: __libc_csu_init+0x30 | Size: 27 | Memory Range: 134514080 - 134514107]
+		Successor: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184
+	Node: <CFGNode main+0x26 [25]> [Name: main+0x26 | Size: 25 | Memory Range: 134513903 - 134513928]
+		Successor: <CFGNode 0x8048390[6]> [Name: None | Size: 6 | Memory Range: 134513552 - 134513558
+	Node: <CFGNode 0x8048390[6]> [Name: None | Size: 6 | Memory Range: 134513552 - 134513558]
+		Successor: <CFGNode __isoc99_scanf [0]> [Name: __isoc99_scanf | Size: 0 | Memory Range: 1213202444 - 1213202444
+	Node: <CFGNode __isoc99_scanf [0]> [Name: __isoc99_scanf | Size: 0 | Memory Range: 1213202444 - 1213202444]
+		Successor: <CFGNode main+0x3f [15]> [Name: main+0x3f | Size: 15 | Memory Range: 134513928 - 134513943
+	Node: <CFGNode print_msg+0x18 [6]> [Name: print_msg+0x18 | Size: 6 | Memory Range: 134513859 - 134513865]
+	Node: <CFGNode main+0x3f [15]> [Name: main+0x3f | Size: 15 | Memory Range: 134513928 - 134513943]
+		Successor: <CFGNode main+0x66 [14]> [Name: main+0x66 | Size: 14 | Memory Range: 134513967 - 134513981
+		Successor: <CFGNode main+0x4e [7]> [Name: main+0x4e | Size: 7 | Memory Range: 134513943 - 134513950
+	Node: <CFGNode main+0x66 [14]> [Name: main+0x66 | Size: 14 | Memory Range: 134513967 - 134513981]
+		Successor: <CFGNode 0x8048370[6]> [Name: None | Size: 6 | Memory Range: 134513520 - 134513526
+	Node: <CFGNode main+0x4e [7]> [Name: main+0x4e | Size: 7 | Memory Range: 134513943 - 134513950]
+		Successor: <CFGNode main+0x55 [12]> [Name: main+0x55 | Size: 12 | Memory Range: 134513950 - 134513962
+		Successor: <CFGNode main+0x79 [14]> [Name: main+0x79 | Size: 14 | Memory Range: 134513986 - 134514000
+	Node: <CFGNode 0x8048370[6]> [Name: None | Size: 6 | Memory Range: 134513520 - 134513526]
+		Successor: <CFGNode puts [0]> [Name: puts | Size: 0 | Memory Range: 1213202436 - 1213202436
+	Node: <CFGNode main+0x55 [12]> [Name: main+0x55 | Size: 12 | Memory Range: 134513950 - 134513962]
+		Successor: <CFGNode 0x8048370[6]> [Name: None | Size: 6 | Memory Range: 134513520 - 134513526
+	Node: <CFGNode main+0x79 [14]> [Name: main+0x79 | Size: 14 | Memory Range: 134513986 - 134514000]
+		Successor: <CFGNode 0x8048370[6]> [Name: None | Size: 6 | Memory Range: 134513520 - 134513526
+	Node: <CFGNode puts [0]> [Name: puts | Size: 0 | Memory Range: 1213202436 - 1213202436]
+		Successor: <CFGNode main+0x87 [17]> [Name: main+0x87 | Size: 17 | Memory Range: 134514000 - 134514017
+		Successor: <CFGNode main+0x61 [5]> [Name: main+0x61 | Size: 5 | Memory Range: 134513962 - 134513967
+		Successor: <CFGNode main+0x74 [5]> [Name: main+0x74 | Size: 5 | Memory Range: 134513981 - 134513986
+	Node: <CFGNode main+0x87 [17]> [Name: main+0x87 | Size: 17 | Memory Range: 134514000 - 134514017]
+	Node: <CFGNode main+0x61 [5]> [Name: main+0x61 | Size: 5 | Memory Range: 134513962 - 134513967]
+		Successor: <CFGNode main+0x8a [14]> [Name: main+0x8a | Size: 14 | Memory Range: 134514003 - 134514017
+	Node: <CFGNode main+0x8a [14]> [Name: main+0x8a | Size: 14 | Memory Range: 134514003 - 134514017]
+	Node: <CFGNode main+0x74 [5]> [Name: main+0x74 | Size: 5 | Memory Range: 134513981 - 134513986]
+		Successor: <CFGNode main+0x8a [14]> [Name: main+0x8a | Size: 14 | Memory Range: 134514003 - 134514017
+	Node: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184]
+	Node: <CFGNode __libc_csu_init+0x4b [10]> [Name: __libc_csu_init+0x4b | Size: 10 | Memory Range: 134514107 - 134514117]
+		Successor: <CFGNode __libc_csu_init+0x55 [8]> [Name: __libc_csu_init+0x55 | Size: 8 | Memory Range: 134514117 - 134514125
+		Successor: <CFGNode __libc_csu_init+0x38 [19]> [Name: __libc_csu_init+0x38 | Size: 19 | Memory Range: 134514088 - 134514107
+	Node: <CFGNode __libc_csu_init+0x38 [19]> [Name: __libc_csu_init+0x38 | Size: 19 | Memory Range: 134514088 - 134514107]
+		Successor: <CFGNode UnresolvableCallTarget [0]> [Name: UnresolvableCallTarget | Size: 0 | Memory Range: 1214255184 - 1214255184
+	Node: <CFGNode frame_dummy+0x22 [9]> [Name: frame_dummy+0x22 | Size: 9 | Memory Range: 134513826 - 134513835]
+		Successor: <CFGNode register_tm_clones [24]> [Name: register_tm_clones | Size: 24 | Memory Range: 134513696 - 134513720
+	Node: <CFGNode register_tm_clones+0x2f [6]> [Name: register_tm_clones+0x2f | Size: 6 | Memory Range: 134513743 - 134513749]
+	Node: <CFGNode deregister_tm_clones+0x25 [6]> [Name: deregister_tm_clones+0x25 | Size: 6 | Memory Range: 134513685 - 134513691]
+		Successor: <CFGNode __do_global_dtors_aux+0x14 [10]> [Name: __do_global_dtors_aux+0x14 | Size: 10 | Memory Range: 134513780 - 134513790
+	Node: <CFGNode  [12]> [Name:  | Size: 12 | Memory Range: 134513488 - 134513500]
+		Successor: <CFGNode UnresolvableJumpTarget [0]> [Name: UnresolvableJumpTarget | Size: 0 | Memory Range: 1214255180 - 1214255180
+	Node: <CFGNode 0x8048366[10]> [Name: None | Size: 10 | Memory Range: 134513510 - 134513520]
+		Successor: <CFGNode  [12]> [Name:  | Size: 12 | Memory Range: 134513488 - 134513500
+	Node: <CFGNode 0x8048376[10]> [Name: None | Size: 10 | Memory Range: 134513526 - 134513536]
+		Successor: <CFGNode  [12]> [Name:  | Size: 12 | Memory Range: 134513488 - 134513500
+	Node: <CFGNode 0x8048386[10]> [Name: None | Size: 10 | Memory Range: 134513542 - 134513552]
+		Successor: <CFGNode  [12]> [Name:  | Size: 12 | Memory Range: 134513488 - 134513500
+	Node: <CFGNode 0x8048396[10]> [Name: None | Size: 10 | Memory Range: 134513558 - 134513568]
+		Successor: <CFGNode  [12]> [Name:  | Size: 12 | Memory Range: 134513488 - 134513500
+	Node: <CFGNode 0x80483a6[2]> [Name: None | Size: 2 | Memory Range: 134513574 - 134513576]
+	Node: <CFGNode 0x80483d1[1]> [Name: None | Size: 1 | Memory Range: 134513617 - 134513618]
+	Node: <CFGNode 0x80483d2[14]> [Name: None | Size: 14 | Memory Range: 134513618 - 134513632]
+		Successor: <CFGNode __x86.get_pc_thunk.bx [4]> [Name: __x86.get_pc_thunk.bx | Size: 4 | Memory Range: 134513632 - 134513636
+	Node: <CFGNode 0x80483e4[12]> [Name: None | Size: 12 | Memory Range: 134513636 - 134513648]
+		Successor: <CFGNode deregister_tm_clones [15]> [Name: deregister_tm_clones | Size: 15 | Memory Range: 134513648 - 134513663
+	Node: <CFGNode 0x804841b[5]> [Name: None | Size: 5 | Memory Range: 134513691 - 134513696]
+		Successor: <CFGNode register_tm_clones [24]> [Name: register_tm_clones | Size: 24 | Memory Range: 134513696 - 134513720
+	Node: <CFGNode 0x8048455[11]> [Name: None | Size: 11 | Memory Range: 134513749 - 134513760]
+		Successor: <CFGNode __do_global_dtors_aux [9]> [Name: __do_global_dtors_aux | Size: 9 | Memory Range: 134513760 - 134513769
+	Node: <CFGNode 0x804847e[2]> [Name: None | Size: 2 | Memory Range: 134513790 - 134513792]
+		Successor: <CFGNode frame_dummy [11]> [Name: frame_dummy | Size: 11 | Memory Range: 134513792 - 134513803
+	Node: <CFGNode 0x8048561[15]> [Name: None | Size: 15 | Memory Range: 134514017 - 134514032]
+		Successor: <CFGNode __libc_csu_init [9]> [Name: __libc_csu_init | Size: 9 | Memory Range: 134514032 - 134514041
+	Node: <CFGNode 0x80485cd[3]> [Name: None | Size: 3 | Memory Range: 134514125 - 134514128]
+		Successor: <CFGNode __libc_csu_fini [2]> [Name: __libc_csu_fini | Size: 2 | Memory Range: 134514128 - 134514130
+	Node: <CFGNode 0x804848d[3]> [Name: None | Size: 3 | Memory Range: 134513805 - 134513808]
+		Successor: <CFGNode frame_dummy+0x10 [9]> [Name: frame_dummy+0x10 | Size: 9 | Memory Range: 134513808 - 134513817
